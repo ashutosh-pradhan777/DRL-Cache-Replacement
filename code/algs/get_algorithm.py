@@ -10,6 +10,7 @@ from .dlirs import DLIRS
 from .cacheus import Cacheus
 from .arcalecar import ARCALeCaR
 from .lirsalecar import LIRSALeCaR
+from .catcher import Catcher
 
 
 def get_algorithm(alg_name):
@@ -39,4 +40,7 @@ def get_algorithm(alg_name):
         return ARCALeCaR
     if alg_name == 'lirsalecar':
         return LIRSALeCaR
+    elif alg_name == 'catcher':
+        return Catcher
+
     return None
